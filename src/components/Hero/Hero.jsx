@@ -11,36 +11,39 @@ function Hero() {
       : "Good Evening";
 
   return (
-    <section className="hero-section" id="hero">
-      <div className="hero-content">
+    <section className="hero" id="hero">
+      <div className="hero-container">
+        {/* Left Content */}
+        <div className="hero-content">
+          <p className="hero-greeting">{greeting}, 👋</p>
 
-        <div className="hero-text">
           <h1>
-            {greeting}, <br />
-            I'm <span>Chintamani Raghuwanshi</span> 👋
+            I'm <span>Chintamani Raghuwanshi</span>
           </h1>
 
-          <p>
-            I'm a passionate Web Developer from Bengaluru who enjoys
-            creating responsive and user-friendly web applications using
-            HTML, CSS, JavaScript, and React.
+          <h2>Frontend React Developer</h2>
+
+          <p className="hero-description">
+            Passionate about building responsive, modern, and user-friendly web
+            applications using HTML, CSS, JavaScript, React, and modern web
+            technologies.
           </p>
 
           <div className="hero-buttons">
-            <a href="#Projects" className="btn primary-btn">
+            <a href="#Projects" className="btn btn-primary">
               View Projects
             </a>
 
-            <a href="#Contact" className="btn secondary-btn">
+            <a href="#Contact" className="btn btn-secondary">
               Contact Me
             </a>
           </div>
         </div>
 
+        {/* Right Image */}
         <div className="hero-image">
           <img src="/profilepic.jpg" alt="Chintamani Raghuwanshi" />
         </div>
-
       </div>
     </section>
   );
