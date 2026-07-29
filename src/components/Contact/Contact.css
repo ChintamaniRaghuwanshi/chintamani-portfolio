@@ -1,0 +1,152 @@
+/* Contact Section */
+
+.contact-section {
+  padding: 80px 8%;
+  background: #f8f9fa;
+}
+
+.contact-container {
+  max-width: 700px;
+  margin: auto;
+}
+
+.contact-container h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #1b4f72;
+}
+
+.contact-subtitle {
+  text-align: center;
+  color: #555;
+  margin: 15px 0 40px;
+}
+
+/* Form */
+
+.contact-form {
+  background: #ffffff;
+  padding: 35px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #1b4f72;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: 0.3s;
+  font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #1b4f72;
+  box-shadow: 0 0 8px rgba(27, 79, 114, 0.2);
+}
+
+/* Button */
+
+.submit-btn {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  background: #1b4f72;
+  color: white;
+  font-size: 17px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.submit-btn:hover {
+  background: #163d5a;
+}
+
+/* Success Message */
+
+.success {
+  text-align: center;
+  margin-top: 20px;
+  color: green;
+  font-weight: bold;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 60px 5%;
+  }
+
+  .contact-container h2 {
+    font-size: 2rem;
+  }
+
+  .contact-form {
+    padding: 25px;
+  }
+}
+
+/* Dark Theme */
+
+body[data-theme="dark"] .contact-section {
+  background: #121212;
+}
+
+body[data-theme="dark"] .contact-container h2 {
+  color: #f18f01;
+}
+
+body[data-theme="dark"] .contact-subtitle {
+  color: #cccccc;
+}
+
+body[data-theme="dark"] .contact-form {
+  background: #1f1f1f;
+}
+
+body[data-theme="dark"] .form-group label {
+  color: #ffffff;
+}
+
+body[data-theme="dark"] .form-group input,
+body[data-theme="dark"] .form-group textarea {
+  background: #2a2a2a;
+  color: #ffffff;
+  border: 1px solid #555;
+}
+
+body[data-theme="dark"] .form-group input::placeholder,
+body[data-theme="dark"] .form-group textarea::placeholder {
+  color: #aaaaaa;
+}
+
+body[data-theme="dark"] .submit-btn {
+  background: #f18f01;
+  color: #ffffff;
+}
+
+body[data-theme="dark"] .submit-btn:hover {
+  background: #d97706;
+}
+
+body[data-theme="dark"] .success {
+  color: #7CFC00;
+}

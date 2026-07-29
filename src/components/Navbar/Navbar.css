@@ -1,0 +1,125 @@
+/* Header */
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Navbar */
+
+.navbar {
+  background: #1b4f72;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 8%;
+}
+
+/* Logo */
+
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Navigation */
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 35px;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #f18f01;
+}
+
+/* Buttons */
+
+.nav-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.theme-toggle,
+.menu-toggle {
+  border: none;
+  background: transparent;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+/* ==========================
+      Mobile Responsive
+========================== */
+
+@media (max-width: 768px) {
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 72px;
+    left: 0;
+    width: 100%;
+    background: #1b4f72;
+
+    flex-direction: column;
+    align-items: center;
+
+    gap: 25px;
+    padding: 20px 0;
+
+    display: none;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+}
+
+/* ==========================
+      Dark Theme
+========================== */
+
+body[data-theme="dark"] {
+  background: #121212;
+  color: white;
+}
+
+body[data-theme="dark"] .navbar {
+  background: #1f1f1f;
+}
+
+body[data-theme="dark"] .nav-links {
+  background: #1f1f1f;
+}
+
+body[data-theme="dark"] .nav-links a {
+  color: white;
+}
+
+body[data-theme="dark"] .nav-links a:hover {
+  color: #f18f01;
+}
